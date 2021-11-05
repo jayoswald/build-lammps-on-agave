@@ -1,11 +1,12 @@
 #!/bin/bash
 
 # Version of LAMMPS to build.
-LMP_VERSION=29Oct2020
+LMP_VERSION=29Sep2021
 # Architecture to build - must match a Makefile
+#ARCH=mpi
 ARCH=volta
 # LAMMPS packages to install
-LMP_PACKAGES="CLASS2 OPT KSPACE SHOCK QEQ USER-PHONON"
+LMP_PACKAGES="CLASS2 OPT KSPACE SHOCK QEQ PHONON REAXFF RIGID MOLECULE"
 
 # Try to download LAMMPS zip file if it does not already exist.
 # If this fails, you may need to update the link or download manually.
